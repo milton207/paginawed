@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Formulario de contacto y datos sobre las 7 maravillas del mundo.">
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="icon" href="favicon/favicon.ico" />
+  <title>Contacto - Maravillas Eternas</title>
+</head>
+<body>
+  <header>
+    <h1>Contáctanos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulario de contacto</h2>
+      <form class="formulario">
+        <div class="campo">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div class="campo">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="campo">
+          <label for="maravilla">Maravilla favorita:</label>
+          <select id="maravilla" name="maravilla">
+            <option value="">Selecciona una</option>
+            <option value="cristo">Cristo Redentor</option>
+            <option value="coliseo">Coliseo</option>
+            <option value="chichen">Chichén Itzá</option>
+            <option value="muralla">Muralla China</option>
+            <option value="taj">Taj Mahal</option>
+            <option value="petra">Petra</option>
+            <option value="machu">Machu Picchu</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="comentarios">Comentarios:</label>
+          <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Información de las Maravillas</h2>
+      <table class="tabla-horario">
+        <thead>
+          <tr>
+            <th>Maravilla</th>
+            <th>Ubicación</th>
+            <th>Declarada en</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chichén Itzá</td>
+            <td>México</td>
+            <td>2007</td>
+          </tr>
+          <tr>
+            <td>Coliseo</td>
+            <td>Italia</td>
+            <td>2007</td>
+          </tr>
+          <tr>
+            <td>Petra</td>
+            <td>Jordania</td>
+            <td>2007</td>
+          </tr>
+          <tr>
+            <td>Machu Picchu</td>
+            <td>Perú</td>
+            <td>2007</td>
+          </tr>
+          <tr>
+            <td>Muralla China</td>
+            <td>China</td>
+            <td>2007</td>
+          </tr>
+          <tr>
+            <td>Taj Mahal</td>
+            <td>India</td>
+            <td>2007</td>
+          </tr>
+          <tr>
+            <td>Cristo Redentor</td>
+            <td>Brasil</td>
+            <td>2007</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Maravillas Eternas</p>
+  </footer>
+</body>
+</html>

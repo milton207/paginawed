@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galería de las 7 maravillas del mundo moderno con imágenes adaptativas y animaciones.">
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="icon" href="favicon/favicon.ico" />
+  <title>Galería - Maravillas Eternas</title>
+</head>
+<body>
+  <header>
+    <h1>Galería de Maravillas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Las 7 Maravillas del Mundo Moderno</h2>
+      <div class="galeria">
+        <!-- Cristo Redentor -->
+        <picture id="cristo">
+          <source srcset="images/foto1-grande.jpg" media="(min-width: 768px)">
+          <source srcset="images/foto1-movil.jpg" media="(max-width: 767px)">
+          <img src="images/foto1-mediana.jpg" alt="Cristo Redentor - Brasil" class="img-galeria animada">
+        </picture>
+
+        <!-- Coliseo Romano -->
+        <picture id="coliseo">
+          <source srcset="images/foto2-grande.jpg" media="(min-width: 768px)">
+          <source srcset="images/foto2-movil.jpg" media="(max-width: 767px)">
+          <img src="images/foto2-mediana.jpg" alt="Coliseo - Italia" class="img-galeria animada">
+        </picture>
+
+        <!-- Chichén Itzá -->
+        <picture id="chichen">
+          <source srcset="images/foto3-grande.jpg" media="(min-width: 768px)">
+          <source srcset="images/foto3-movil.jpg" media="(max-width: 767px)">
+          <img src="images/foto3-mediana.jpg" alt="Chichén Itzá - México" class="img-galeria animada">
+        </picture>
+
+        <!-- Muralla China -->
+        <picture id="muralla">
+          <source srcset="images/foto4-grande.jpg" media="(min-width: 768px)">
+          <source srcset="images/foto4-movil.jpg" media="(max-width: 767px)">
+          <img src="images/foto4-mediana.jpg" alt="Gran Muralla China" class="img-galeria animada">
+        </picture>
+
+        <!-- Taj Mahal -->
+        <picture id="tajmahal">
+          <source srcset="images/foto5-grande.jpg" media="(min-width: 768px)">
+          <source srcset="images/foto5-movil.jpg" media="(max-width: 767px)">
+          <img src="images/foto5-mediana.jpg" alt="Taj Mahal - India" class="img-galeria animada">
+        </picture>
+
+        <!-- Petra -->
+        <picture id="petra">
+          <source srcset="images/foto6-grande.jpg" media="(min-width: 768px)">
+          <source srcset="images/foto6-movil.jpg" media="(max-width: 767px)">
+          <img src="images/foto6-mediana.jpg" alt="Petra - Jordania" class="img-galeria animada">
+        </picture>
+
+        <!-- Machu Picchu -->
+        <picture id="machupicchu">
+          <source srcset="images/foto7-grande.jpg" media="(min-width: 768px)">
+          <source srcset="images/foto7-movil.jpg" media="(max-width: 767px)">
+          <img src="images/foto7-mediana.jpg" alt="Machu Picchu - Perú" class="img-galeria animada">
+        </picture>
+      </div>
+    </section>
+
+    <section>
+      <h2>Descripción de las Maravillas</h2>
+      <ul style="max-width: 800px; margin: auto; padding-left: 1rem;">
+        <li><strong>Chichén Itzá (México):</strong> Antigua ciudad maya con la famosa pirámide de Kukulkán, reconocida por su precisión astronómica.</li>
+        <li><strong>Coliseo (Italia):</strong> Anfiteatro romano ubicado en Roma, símbolo de la ingeniería y el entretenimiento del Imperio Romano.</li>
+        <li><strong>Petra (Jordania):</strong> Ciudad esculpida en roca rosa por los nabateos, famosa por su fachada del Tesoro y su historia oculta.</li>
+        <li><strong>Machu Picchu (Perú):</strong> Ciudadela inca enclavada en los Andes, conocida por su arquitectura y misticismo.</li>
+        <li><strong>Muralla China (China):</strong> Extensa muralla defensiva construida durante siglos, visible incluso desde el espacio.</li>
+        <li><strong>Taj Mahal (India):</strong> Mausoleo de mármol blanco, símbolo del amor eterno, construido por el emperador Shah Jahan.</li>
+        <li><strong>Cristo Redentor (Brasil):</strong> Estatua de 30 metros de alto ubicada en Río de Janeiro, que representa la fe y la paz.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Icono SVG Temático</h2>
+      <div class="svg-contenedor">
+        <svg width="120" height="120" viewBox="0 0 100 100" class="svg-animado">
+          <circle cx="50" cy="50" r="40" fill="#0077cc" />
+          <text x="50%" y="55%" text-anchor="middle" fill="white" font-size="12px" font-family="Arial">MUNDO</text>
+        </svg>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Maravillas Eternas</p>
+  </footer>
+</body>
+</html>
